@@ -1,0 +1,726 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main,body,html{
+    /* background-color: cornsilk; */
+    color: black;
+}
+#nav{
+    height: 5vh;
+    margin: 20px;
+    user-select: none;
+}
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2vh;
+    right: 1.5vw;
+    z-index: 99;
+    font-size: 2vw;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    background-color: darkorange;
+    color: white;
+    cursor: pointer;
+    padding: 0.8vw 1.5vw ;
+    border-radius: 50%;
+  }
+  
+#myBtn:hover {
+    background-color: #555;
+  }
+
+.nav1{
+    
+    margin: 0 20px;
+}
+.nav1 h1{
+    font-size: 2vw;
+    line-height: 1.2vw;
+    color: darkorange;
+    font-weight: 600;
+    word-spacing: 0.5vw;
+}
+.nav1 h1 span{
+    font-size: 1vw;
+    /* text-align: center; */
+    margin-left: 1vw;
+    color: black;
+    
+}
+
+.nav2 #searchbar{
+    /* background-color: black; */
+    -webkit-text-fill-color: darkorange;
+    padding: 0.3vw 2vw;
+    outline: none;
+    border-bottom: 0.1vw solid navy;
+    
+}
+.nav3{
+    margin-left: 2.5vw;
+    
+}
+#menubar{
+    font-size: 20px;
+}
+#checkboxx{
+    display: none;
+     /* display: block; */
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    margin-left: -100%;
+    /* margin-top: 10vh; */
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    /* max-height: 0px; */
+    transition: width 2s, height 2s, background-color 2s;
+    transition-timing-function: ease-in;
+    background-image: linear-gradient(0deg,#ff8c0058,#ff8c003b) transparent;
+
+}
+.dropdown-content a{
+    display: block;
+    /* padding-top: 20px 50px; */
+    /* margin: 10px 10px; */
+    font-size: 2vw;
+    /* background-color: aqua; */
+
+}
+.dropdown-content a:hover{
+    background-color: cadetblue;
+    color: white;
+}
+#checkboxx:checked ~ .dropdown-content{
+    display: block;
+    background-color: #ffcccc;
+    width: 100vw;
+    height: 70vh;
+    /* max-height: 300px; */
+}
+#welcome{
+    /* background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)); */
+
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid  #ffcccc; */
+    justify-content: space-between;
+
+}
+#welcome1{
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.575),rgba(0, 0, 0, 0.575)),url(./images/background0.jpg);
+    background-size: cover;
+    width: 98vw;
+    height: 88.5vh;
+    background-repeat: no-repeat;
+}
+#button1,#button2{
+    font-size: 5vw;
+    /* width: 60px; */
+    /* height: 60px; */
+    /* border-radius: 50%; */
+    text-align: center;
+    margin: 0.4vw;
+    /* margin-top: %; */
+}
+#button1:hover,#button2:hover{
+    color: darkorange;
+}
+.content{
+    text-align: center;
+    margin-top: 30vh;
+    user-select: none;
+}
+.content p{
+      font-size: 1vw;
+      font-weight: 500;
+
+}
+.content h1{
+    font-size: 50px;
+    font-weight: 600;
+}
+.content button , #secland #content button{
+    background-color: darkorange;
+    padding:0.7vw 1.5vw;
+    border-radius: 0.3vw;
+    font-size: 1.5vw;
+
+}
+.content button span{
+    font-size: 1.4vw;
+}
+.content button:hover,  #secland #content button:hover{
+    border: 2px solid black;
+    background-color: white;
+    color: darkorange;
+}
+
+#secland{
+    user-select: none;
+    margin-top: 10vh;
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+#secland #img1 img{
+    width: 30vw;
+    height: 50vh;
+    margin-left: 6vw;
+    margin: 0 3vw 5vh 6vw;
+
+
+}
+#nothing{
+        /* border: ; */
+    /* mask-image: url("./images/Shape.png"); /*Option de Masque*/
+    /* mask-position:center;
+    mask-mode: luminance;
+    mask-size: contain; */ 
+    /* mask-image: url("./images/Shape.png"); */
+    /* -webkit-mask:url("./images/Shape.png") center/contain no-repeat; */
+}
+#secland #img1 img:hover , #secland #img2 #img:hover{
+    box-shadow: 7px 15px 4px rgb(63, 63, 63);
+}
+#secland #img2 #img{
+    /* margin-top: 30vh; */
+    width: 20vw;
+    height: 40vh;
+    border-radius: 40%;
+    margin: 25vh 3vw 5vh 3vw;
+    /* -webkit-mask:url("./images/Shape2.png") center/contain no-repeat; */
+}
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+#secland #content{
+    font-size: 3vw;
+    font-family: 'Arvo', serif;
+    width: 30vw;
+    margin-right: 3vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#secland #content span{
+font-family: 'Pacifico', cursive;
+color: darkorange;
+}
+.content-p{
+    font-size: 1.5vw;
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* #typesroom{
+    width: 98vw;
+    height: 51vh;
+
+} */
+.container1{
+    display: flex;
+    justify-content: space-around;
+    width: 98vw;
+    height: 51vh;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+.container11 {
+    position: relative;
+    width: 20vw;
+    height: 50vh;
+    /* border: 2px solid red; */
+  }
+  
+  .container11 .image {
+    display: block;
+    width: 22vw;
+    height: 47vh;
+    border-bottom: 2px solid darkorange;
+
+  }
+  
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkorange;
+    overflow: hidden;
+    width: 20vw;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+.container11:hover .overlay {
+    height: 40vh;
+  }
+  
+.text {
+    /* white-space: nowrap;  */
+    color: white;
+    font-size: 1vw;
+    font-weight: 600;
+    position: absolute;
+    overflow: hidden;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-justify: inter-character;
+    width: 20vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+
+.text button{
+    background-color: white;
+    color: black;
+    padding: 0.5vw 2vw;
+    /* text-decoration: underline; */
+    font-size: 1.2vw;
+    /* border: 2px solid black; */
+    border-radius: 3px;
+}
+.text button:hover{
+    background-color: deeppink;
+    color: white;
+
+}
+
+#bookappointment{
+    width: 98vw;
+    height:47vh;
+}
+#bookappointment form {
+    padding-top: 10vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+}
+#bookappointment .formdiv{
+    padding: 2vw 3vw;
+    background-color: darkorange;
+}
+#bookappointment .formdiv div input , #bookappointment .formdiv div select{
+    border: 2px solid white;
+    padding: 1vw 2vw;
+    outline: none;
+
+}
+#bookappointment .formdiv div p{
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 600;
+    user-select: none;
+}
+#bookappointment .formdiv div button{
+    margin-top: 5vh;
+    color: black;
+    padding: 1vh 2vw;
+    /* border: 2px solid white; */
+    font-size: 2.5vh;
+    font-weight: 600;
+    background-color: burlywood;
+
+}
+#bookappointment .formdiv div button:hover{
+    background-color: white;
+    color: darkorange;
+
+}
+.about{
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* padding: 10vw; */
+    
+}
+.about1{
+    padding: 1vw 5vw;
+    width: 50vw;
+}
+.about1 #p1{
+    font-size: 1.5vw;
+    text-decoration: underline;
+}
+.about1 #p2{
+    color: darkorange;
+    font-size: 2.5vw;
+    font-weight: 600;
+    border-bottom: 2px solid deeppink;
+}
+.about1 button{
+    background-color: darkorange;
+    padding:0.5vw 1.3vw;
+    /* border-radius: 0.3vw; */
+    font-size: 1.5vw;
+    margin-top: 1vh;
+}
+.about1 button:hover{
+    background-color: white;
+    color: darkorange;
+    border: 2px solid black;
+}
+.about2 img{
+    width: 35vw;
+    height: 45vh;
+    margin-bottom: 10vh;
+    margin-right: 5vw;
+}
+#resturant{
+    margin-top: 2vh;
+    width: 98vw;
+    margin-bottom: 5vh;
+    border-right: 4px solid darkorange;
+    border-bottom:4px solid darkorange;
+}
+#resturant .line-through1{
+    text-align: center;
+    text-decoration: underline;
+    color: darkorange;
+    font-size: 2.5vw;
+    /* line-height: .5vw; */
+    text-transform: uppercase;
+}
+#resturant1{
+    margin-top: 2vh;
+    width: 98vw;
+    margin-bottom: 10vh;
+}
+.res1{
+    width: 95vw;
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.res1 #rp{
+    text-align: center;
+    font-size: 1.2vw;
+}
+.res1 h3{
+    font-size: 3vw;
+    font-weight: 600;
+    /* text-shadow: #ffcccc; */
+    text-align: center;
+}
+.res1 #rpp{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+#resimg{
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 2px solid red; */
+}
+#resimg img{
+    width: 35vw;
+    height: 54vh;
+    margin-bottom: 5vh;
+    margin: 1vh;
+}
+#img1res{
+    /* margin-left: 20vw; */
+}
+#resmenu{
+    margin-left: 10vw;
+}
+#resmenu ul li span {
+    padding: 0 15vw ;
+
+}
+#resmenu ul li{
+    padding: 1vh 0;
+}
+.reservation{
+    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.363),rgba(0, 0, 0, 0.363)),url(./images/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.reservation #rp{
+    padding: 2vh 0;
+    text-align: center;
+}
+.reservation h3{
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+}
+.reservation #rpp{
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: 600; 
+    padding-bottom: 5vh;
+}
+.reservation form {
+    /* background-color: #ffcccc; */
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+.reservation form div{
+    /* width: 50vw; */
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+}
+.reservation form div input{
+    width: 25vw;
+    padding: 1vh 2vw;
+    margin: 2vh 2vw;
+    outline: none;
+    /* background-color: ; */
+}
+.reservation form div textarea{
+    width: 45vw;
+    /* height: 5vh; */
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    margin-top: 3vh;
+    max-height: 30vh;
+    min-height: 4vh;
+
+}
+.reservation form button{
+    /* background-color: white; */
+    color: white;
+    padding: 1vh 3vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    margin-left: 20vw;
+    border: 1.5px solid white;
+
+}
+.reservation form button:hover{
+    background-color: darkorange;
+    color: white;
+    border: 1.5px solid black;
+}
+.numberspeaks{
+    width: 96vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20vh;
+    justify-content: space-between;
+    padding-bottom: 5vh;
+    border-bottom: 2px solid black;
+}
+.numberspeaks .content0{
+    width: 35vw;
+
+}
+.numberspeaks .content0 h1{
+    /* font-size: 3vw; */
+    color: darkorange;
+    font-size: 2.5vw;
+    /* word-spacing: 1vw; */
+    letter-spacing: 0.3vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.content0 p{
+    text-align: center;
+    font-size: 0.9vw;
+}
+.content1 h1 , .content2 h1,.content3 h1,.content4 h1{
+    font-size: 4vw;  
+    font-weight: 800;
+}
+.content1 p , .content2 p,.content3 p,.content4 p{
+    font-size: 1vw; 
+    text-transform: capitalize; 
+
+}
+.facilities{
+    width: 98vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+.facilities h1{
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: darkorange;
+    text-align: center;
+}
+.facilities p{
+    text-align: center;
+    font-size: .9vw;
+}
+.facildiv div{
+    margin-top: 10vh;
+    width: 20vw;
+    margin-bottom: 10vh;
+}
+.facildiv div i{
+    font-size: 20px;
+    background-color: darkorange;
+    padding: 1vw;
+    border:2px solid white;
+
+    border-radius: 60%;
+}
+.facildiv div i:hover{
+    background-color: white;
+    border:2px solid black;
+    color: darkorange;
+
+}
+#facicontent{
+    padding-top: 5vh;
+    font-size: 1.2vw;
+}
+.reviews{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+.reviews .rev1{
+    width: 25vw;
+    height: 50vh;
+    background-color: darkorange;
+    border-radius: 3px;
+}
+.reviews .rev1 #con1{
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 2.5vw;
+}
+.reviews .rev1 #con2{
+    text-align: center;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+.reviews .rev1 #con3{
+    padding: 1vw;
+    text-justify: inter-character;
+}
+.rev1 div{
+    display: flex;
+    width: 8vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rev1 div .checked{
+    color: gold;
+}
+
+.contact{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    justify-content: space-around;
+}
+.contact #con1{
+    display: flex;
+}
+.contact #con1 p{
+    margin:0  0.5vw;
+    font-size: 1.5vw;
+    background-color: darkorange;
+    color: white;
+    padding: 0.5vw;
+    width: 3vw;
+    height: 3vw;
+    text-align: center;
+    border-radius: 50%;
+}
+.contact #con1 p:hover{
+    color: darkorange;
+    background-color: white;
+    border: 1px solid darkorange;
+    width: 3.2vw;
+    
+}
+.contact div #contury{
+    text-align: center;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.contact div #contury:hover{
+    color: darkorange;
+
+}
+.contact div #address{
+    font-size: 1vw;
+    padding: 1vw;
+}
+.spots{
+    width: 96vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+#todo p , #touch p{
+    text-align: center;
+    font-size: 2.4vw;
+    color: darkorange;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.spots #todo div {
+    /* display: flex; */
+}
+.spots #todo div img{
+    width: 30vw;
+    height: 40vh;
+}
+#touch{
+    width: 35vw;
+    /* border: 2px solid deeppink; */
+    margin: 0 3vw;
+
+}
+#touch form{
+    padding: 10vh 0;
+    width: 34vw;
+    height: 75.4vh;
+    background-color: darkorange;
+}
+#touch form input ,#touch form textarea {
+    width: 30vw;
+    padding: 1.4vh;
+    outline: none;
+    margin: 1vh 3vh;
+    text-align: center;
+    max-height: 25vh;
+    min-height: 6vh;
+}
+#touch form #submit{
+    color: white;
+    font-size: 1.7vw;
+    border: 2px solid white;
+}
+#touch form #submit:hover{
+    background-color: white;
+    color: darkorange;
+    border: 2px solid black;
+}
